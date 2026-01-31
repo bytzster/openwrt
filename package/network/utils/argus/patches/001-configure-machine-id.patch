@@ -1,0 +1,71 @@
+diff --git a/configure b/configure
+index 6ef8fe2..0abd047 100755
+--- a/configure
++++ b/configure
+@@ -5350,36 +5350,36 @@ printf "%s\n" "yes" >&6; }
+ 
+       case "$target_os" in
+          linux*)
+-           { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking whether machine_id is found" >&5
+-printf %s "checking whether machine_id is found... " >&6; };
+-           as_ac_File=`printf "%s\n" "ac_cv_file_"/var/lib/dbus/machine-id"" | sed "$as_sed_sh"`
+-{ printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for \"/var/lib/dbus/machine-id\"" >&5
+-printf %s "checking for \"/var/lib/dbus/machine-id\"... " >&6; }
+-if eval test \${$as_ac_File+y}
+-then :
+-  printf %s "(cached) " >&6
+-else case e in #(
+-  e) test "$cross_compiling" = yes &&
+-  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
+-if test -r ""/var/lib/dbus/machine-id""; then
+-  eval "$as_ac_File=yes"
+-else
+-  eval "$as_ac_File=no"
+-fi ;;
+-esac
+-fi
+-eval ac_res=\$$as_ac_File
+-	       { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
+-printf "%s\n" "$ac_res" >&6; }
+-if eval test \"x\$"$as_ac_File"\" = x"yes"
+-then :
+-
+-printf "%s\n" "#define HAVE_MACHINE_ID /**/" >>confdefs.h
+-
+-else case e in #(
+-  e) no ;;
+-esac
+-fi
++#           { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking whether machine_id is found" >&5
++#printf %s "checking whether machine_id is found... " >&6; };
++#           as_ac_File=`printf "%s\n" "ac_cv_file_"/var/lib/dbus/machine-id"" | sed "$as_sed_sh"`
++#{ printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for \"/var/lib/dbus/machine-id\"" >&5
++#printf %s "checking for \"/var/lib/dbus/machine-id\"... " >&6; }
++#if eval test \${$as_ac_File+y}
++#then :
++#  printf %s "(cached) " >&6
++#else case e in #(
++#  e) test "$cross_compiling" = yes &&
++#  as_fn_error $? "cannot check for file existence when cross compiling" "$LINENO" 5
++#if test -r ""/var/lib/dbus/machine-id""; then
++#  eval "$as_ac_File=yes"
++#else
++#  eval "$as_ac_File=no"
++#fi ;;
++#esac
++#fi
++#eval ac_res=\$$as_ac_File
++#	       { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $ac_res" >&5
++#printf "%s\n" "$ac_res" >&6; }
++#if eval test \"x\$"$as_ac_File"\" = x"yes"
++#then :
++#
++#printf "%s\n" "#define HAVE_MACHINE_ID /**/" >>confdefs.h
++#
++#else case e in #(
++#  e) no ;;
++#esac
++#fi
+ 
+          ;;
+ 
