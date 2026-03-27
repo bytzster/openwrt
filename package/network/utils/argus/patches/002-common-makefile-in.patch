@@ -1,0 +1,13 @@
+diff --git a/common/Makefile.in b/common/Makefile.in
+index db5c9bb..32e6792 100755
+--- a/common/Makefile.in
++++ b/common/Makefile.in
+@@ -51,7 +51,7 @@ INCLS = -I$(srcdir) @V_INCLS@ @XDR_INCLS@ -I$(srcdir)/../include  -I$(srcdir)/..
+ DEFS = @DEFS@
+
+ # Standard CFLAGS
+-CFLAGS = $(ARCH) $(CCOPT) $(INCLS) $(DEFS) $(EXTRA_CFLAGS)
++CFLAGS = $(CCOPT) $(INCLS) $(DEFS) $(EXTRA_CFLAGS)
+ LDFLAGS = @LDFLAGS@
+
+ INSTALL = @INSTALL@
